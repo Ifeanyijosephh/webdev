@@ -395,11 +395,14 @@ label {
 .Cta {
     padding: 0.4rem 1rem 0.4rem 1rem; 
     border: 1px solid cyan;
-    width: 80px;
+    width: 100px;
     align-content: center;
     text-align: center;
     border-radius: var(--buttonRadius);
     box-shadow: var(--textShadow);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 .box1 {
     width: 0.6rem;
@@ -517,6 +520,9 @@ footer {
     border-top: 1px solid cyan;
 }
 @media (min-width: 689px) {
+    :root {
+        --fontSize: clamp(0.7rem, 1.5vw, 1rem);
+    }
     .headerSection {
         display: flex;
         flex-direction: row;
@@ -551,7 +557,7 @@ footer {
     }
     .navLink {
         font-weight: bold;
-        font-size: 1rem;
+        font-size: var(--fontSize);
         align-self: center;
     }
     .hamburger {
