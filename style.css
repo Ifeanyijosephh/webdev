@@ -231,7 +231,7 @@ button a {
 #profileName {
     color: cyan;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: clamp(1.5rem, 3vw, 1.7rem);
     padding-top: 1rem;
 }
 #profileSkill {
