@@ -45,6 +45,7 @@ main {
 }
 button {
     transition: transform 0.2s ease-in-out;
+    cursor: pointer;
 }
 button:active {
     transform: scale(1.05);
@@ -59,7 +60,7 @@ button:active {
     display: flex;
     gap: 2rem;
     flex-direction: column;
-    height:  clamp(300px, 70vh, 400px);
+    height:  clamp(300px, 80vh, 400px);
     width: 100vw;
     padding: 1rem 0rem 1rem 2rem;
     margin: 0rem 0 0 0;
@@ -84,7 +85,7 @@ button:active {
     z-index: 50;
 }
 #menuWord {
-    font-size: var(--fontSize);
+    font-size: 1.4rem;
     font-weight: 700;
     padding-top: 5px;
     color: cyan;
@@ -161,13 +162,36 @@ button a {
     color: cyan;
 }
 .viewCTA {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+.viewCTA a {
     background-color: var(--primaryBackground-color);
     border: none;
     padding: var(--buttonPadding);
     border-radius: var(--buttonRadius);
     font-weight: bold;
 }
+.viewCTA:hover {
+    transform: scale(1.1);
+}
+.viewCTA:active {
+    transform: translatey(-3px);
+}
 .getCTA {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 1rem;
+}
+.getCTA:hover {
+    transform: scale(1.1);
+}
+.getCTA:active {
+    transform: translatey(-3px);
+}
+.getCTA a {
     background-color: var(--primary-color);
     border: 1px solid cyan;
     padding: var(--buttonPadding);
@@ -194,6 +218,10 @@ button a {
 }
 .me {
     color: var(--primaryBackground-color);
+}
+.ratedAspects {
+    color: cyan;
+    font-weight: 600;
 }
 .numberRate {
     display: flex;
@@ -235,7 +263,7 @@ button a {
     padding-top: 1rem;
 }
 #profileSkill {
-    color: var(--primaryBackground-color);
+    color: cyan;
     font-weight: bold;
     padding-top: 0.5rem;
 }
@@ -296,7 +324,7 @@ label {
     justify-content: space-between;
 }
 .labels2 {
-    color: var(--primaryBackground-color);
+    color: cyan;
 }
 .learningBox {
     height: auto;
@@ -495,6 +523,7 @@ textarea {
 .hireMe {
     background-color: var(--primaryBackground-color);
     border: none;
+    color: cyan;
     padding: var(--buttonPadding);
     border-radius: var(--buttonRadius);
     font-weight: bold;
@@ -571,4 +600,11 @@ footer {
         padding-bottom: 0.5rem;
         border-radius: var(--buttonRadius);
     }
+    #contactNavBtn:hover {
+    transform: scale(1.1);
+    }
+    #contactNavBtn:active {
+    transform: translatey(-3px);
+    }
 }
+

@@ -25,7 +25,7 @@
     </head>
     <body class="sphere-grid-background">
             <header class="headerSection">
-                <img src="images/my-logo.png" class="myLogo" id="myLogo">
+                <img src="images/my-logo.png" class="myLogo" id="myLogo" alt="My Logo">
                 <nav class="navLinks" id="navLinks">
                     <a href="" disabled class="navLink" id="menuWord"> Menu </a><hr id="horizontal">
                     <a href="#heroSection" class="navLink" aria-label="Hero Section Button">Home</a>
@@ -49,7 +49,7 @@
                 From concept to code, i turn ideas into functional, engaging, and high performing web experiences.<br>
             Your Vision, my expertise - let's build something expectional</p><br>
 
-            <button class="viewCTA"><a href="#projectSection"> View My Work </a></a></button>
+            <button class="viewCTA"><a href="#projectSection"> View My Work </a></button>
             <br><br>
             <button class="getCTA"><a href="#contactSection"> Get in Touch </a></a></button>
             </section>
@@ -62,13 +62,14 @@
                     <p id="aboutText4">My mission is simp le: <strong>to craft webb experiences that don't just work, but inspire.</strong></p>
                 </article>
                 <aside class="numberRate">
-                    <div> <span class="rateNumbers">10+</span> <br> Projects</div>
-                    <div> <span class="rateNumbers">5+</span><br> Technologies</div>
-                    <div> <span class="rateNumbers">100%</span><br> Dedication</div>
+                    <div class="ratedAspects"> <span class="rateNumbers">10+</span> <br> Projects</div>
+                    <div class="ratedAspects"> <span class="rateNumbers">5+</span><br> Technologies</div>
+                    <div class="ratedAspects"> <span class="rateNumbers">100%</span><br> Dedication</div>
                 </aside>
                 <div class="profilePicture" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out">
                         <img src="images/profile.png" alt="Ifeanyi Joseph" aria-label="Ifeanyi's Profile Picture" id="mainPic">
                     <h3 id="profileName">Ifeanyi Joseph</h3>
+                    <br>
                     <p id="profileSkill">Website Developer</p>
                     <p id="profileDes"> Turning ideas into reality, one pixel at a time</p>
                 </div>
@@ -111,7 +112,7 @@
                             <span class="labels2"> 80%</span>
                         </label>
                         <br>
-                        <meter id="cssMeter" value="80" min="0" max="100" aria-label="Firebase meter" >80%</meter>
+                        <meter id="fireMeter" value="80" min="0" max="100" aria-label="Firebase meter" >80%</meter>
                     </div>
                     <div class="skills" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-out">
                         <h3>Design & UI/UX</h3>
@@ -202,7 +203,7 @@
                         <input type="email" id="email" placeholder="Your Email" required aria-label="Email Input"><br>
                         <textarea id="textarea" placeholder="Your message..." required aria-label="Message Box"></textarea>
                         <br>
-                        <button type="submit" id="submitButton">Send message</button>
+                        <button type="submit" id="submitButton" aria-label="Submite Message Button ">Send message</button>
                     </form>
                     <script src="emailbackend.js"></script>
             </section>
@@ -212,7 +213,7 @@
                     <p class="freelanceText">
                         I am Avaliable for freelance opportunities, and exiciting new projects. Let's discuss how we can bring your ideas to life.
                     </p>
-                    <button class="hireMe"><a href="https://wa.me/message/L4V24KRUGU7XE1" target="_blank" aria-label="Hire Me CTA"> Hire Me</a> </button>
+                    <button class="hireMe" onclick="window.location.href='https://wa.me/message/L4V24KRUGU7XE1'" aria-label="Hire Me CTA"> Hire Me </button>
                 </div>
             </section>
         </main>
