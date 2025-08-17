@@ -6,7 +6,7 @@
     --primary-color: #020617;   
     --textColor: rgb(3, 155, 155);
     --textShadow: 0 0 50px rgba(0, 64, 255, 0.311);
-    --fontSize: clamp(0.9rem, 2vw, 1.3rem);
+    --fontSize: clamp(0.9rem, 1.8vw, 1.2rem);
 }
 *{
     margin: 0;
@@ -34,6 +34,7 @@ body {
     box-sizing: border-box;
     width: 100vw;
     color: var(--textColor);
+    font-size: var(--fontSize);
 }
 main {
     box-sizing: border-box;
@@ -83,7 +84,7 @@ button:active {
     z-index: 50;
 }
 #menuWord {
-    font-size: clamp(1rem, 1.5rem, 2rem);
+    font-size: var(--fontSize);
     font-weight: 700;
     padding-top: 5px;
     color: cyan;
@@ -135,6 +136,9 @@ button:active {
     padding-right: 1rem;
     padding-left: 1rem;    
 }
+#heroIntro {
+    font-size: var(--fontSize);
+}
 #pHello {
     font-weight: lighter;
     font-size: var(--fontSize);
@@ -149,7 +153,7 @@ button:active {
 #mySkill {
     font-weight: bolder;
     color: cyan;
-    font-size: var(--fontSize);
+    font-size: 1.3rem;
 }
  
 button a {
@@ -184,6 +188,9 @@ button a {
     color: cyan;
     margin-bottom: 2rem;
     font-weight: 800;
+}
+#aboutMe p {
+    font-size: var(--fontSize);
 }
 .me {
     color: var(--primaryBackground-color);
