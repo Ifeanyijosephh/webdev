@@ -241,8 +241,7 @@ button a {
     background-color: var(--primary-color);
     border: none;
     border-radius: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
     box-shadow: var(--textShadow);
     justify-self: center;
     margin-top: 4rem;
