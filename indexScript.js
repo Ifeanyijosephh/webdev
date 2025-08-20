@@ -13,4 +13,15 @@ document.body.addEventListener("click", () => {
     hamburger.classList.remove("active");
 });
 
+window.addEventListener("load", () => {
+    const loader = document.getElementById("mainLoader");
+    const body = document.body;
+
+    loader.classList.add("fadeOut");
+    setTimeout (() => {
+        loader.style.display = "none";
+        document.body.style.display = "block";
+    }, 800);
+});
+
 

@@ -8,6 +8,80 @@
     --textShadow: 0 0 50px rgba(0, 64, 255, 0.311);
     --fontSize: clamp(0.9rem, 1.8vw, 1.2rem);
 }
+
+    .mainLoadWrapper {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        z-index: 99999;
+        top: 0;
+        right: 0;
+    }
+    .mainLoadWrapper.fadeOut {
+        opacity: 0;
+        display: none;
+        transition: opacity 0.8s ease;
+        pointer-events: none;
+    }
+    .nameLetters {
+        font-size: 2rem;
+        color: cyan;
+        font-weight: 800;
+    }
+    #i {
+        animation-name: i;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        transition: transform 0.5s ease;
+    }
+    @keyframes i {
+        0% { transform: scale(0); opacity: 1;}
+        50% { transform: scale(1.5);}
+        100% { transform: scale(1);}
+    }
+        #f {
+        animation-name: i;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        transition: transform 0.5s ease;
+        animation-delay: 0.2s;
+    }
+        #e {
+        animation-name: i;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        transition: transform 0.5s ease;
+        animation-delay: 0.4s;
+    }
+        #c {
+        animation-name: i;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        transition: transform 0.5s ease;
+        animation-delay: 0.6s;
+    }
+        #o {
+        animation-name: i;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        transition: transform 0.5s ease;
+        animation-delay: 0.8s;
+    }
 *{
     margin: 0;
     padding: 0;
