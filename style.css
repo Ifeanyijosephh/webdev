@@ -1,3 +1,6 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
 :root {
     --primaryBackground-color: rgb(65, 65, 255);
     --mainPadding: 1rem;
@@ -8,6 +11,7 @@
     --textShadow: 0 0 50px rgba(0, 64, 255, 0.311);
     --fontSize: clamp(0.9rem, 1.8vw, 1.2rem);
 }
+ 
 
     .mainLoadWrapper {
         height: 100%;
@@ -104,7 +108,7 @@ html {
     z-index: 0;
 }
 body {
-    font-family: 'quicksand', sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     width: 100vw;
     color: var(--textColor);
