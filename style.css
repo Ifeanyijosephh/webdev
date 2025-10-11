@@ -151,11 +151,12 @@ button:active {
 }
 .navLink {
     text-decoration: none;
+    font-weight: 600;
     color: cyan;
     transition: transform 0.2s ease;
 }
 .navLink:focus {
-    transform: scale(1.1);
+    transform: scale(1.07);
     font-weight: bold;
 }
 .navLinks.active {
